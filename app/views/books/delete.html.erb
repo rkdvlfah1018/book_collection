@@ -1,0 +1,11 @@
+<%= render @book %>
+
+<div>
+
+    <p>Are you sure you want to delete this book?</p>
+
+    <%= button_to "Destroy This Book", @book, method: :delete %>
+    <%= link_to "No, Go Back", @book %>
+    <%= link_to "Back to books", books_path %>
+
+</div>
